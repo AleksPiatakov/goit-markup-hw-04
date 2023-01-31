@@ -271,9 +271,9 @@ section {
 .icon-bg {
     max-width: 264px;
     margin-bottom: 8px;
+    padding: 24px 100px;
     border-radius: 4px;
     background-color: var(--logo-secondary-color);
-    padding: 24px 100px;
 }
 
 
@@ -308,7 +308,7 @@ section {
     background-color: var(--secondary-bg-color);
 } 
 
-.title-team {
+.section-title {
     margin-bottom: 72px;
 }
 
@@ -437,17 +437,17 @@ background-color: var(--accent-color);
   | customers
   |============================
 */
-.customers-section {
+/* .customers-section {
     padding-top: 0;
-}
+} */
 
-.customers {
+/* .customers {
     display: flex;
     flex-direction: column;
     gap: 72px;
     align-items: center;
     padding-top: 130px;
-}
+} */
 
 .customers-list {
     display: flex;
@@ -457,21 +457,22 @@ background-color: var(--accent-color);
 
 .customers-link {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     width: 168px;
     height: 88px;
-    border: 1px solid var(--primary-bg-customers);
+    border: 1px solid currentColor;
     border-radius: 4px;
+    color: var(--primary-bg-customers);
 }
 
 .customers-icon {
-    fill: var(--primary-bg-customers);
+    fill: currentColor;
 }
 
-.customers-icon:hover,
-.customers-icon:focus {
-    fill: var(--accent-color);
+.customers-link:hover,
+.customers-link:focus {
+    color: var(--accent-color);
 }
 
 
@@ -486,24 +487,11 @@ background-color: var(--accent-color);
 }
 
 .container-footer {
-    display: inline-flex;
-    gap: 120px;
-    align-items: flex-start;
-    padding-left: 156px;
-}
-
-.logo-footer {
     display: flex;
-    flex-direction: column;
-    gap: 16px;
-    align-items: flex-start;
 }
 
  .social-media {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;    
-    max-width: 208px;
+    margin-left: 120px;
 }
 
 .footer-social-link {
@@ -534,6 +522,7 @@ background-color: var(--link-bg-footer);
 
 .footer-desc {
     max-width: 264px;
+    margin-top: 16px;
     /* min-height: 110px; */
     color: var(--secondary-text-color);
     font-weight: 400;
@@ -543,6 +532,7 @@ background-color: var(--link-bg-footer);
 }
 
 .footer-social-desc {
+    margin-bottom: 16px;
     color: var(--secondary-text-color);
     font-weight: 500;
     font-size: 16px;
